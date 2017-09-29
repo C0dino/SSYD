@@ -1,0 +1,31 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Basic Form</title>
+        <link rel="stylesheet" href="public/css/main.css">
+    </head>
+    <body>
+        <form action="/apply" method="post">
+            <fieldset>
+                <legend>System Info</legend>
+                <label for="systemType">Choose System Type</label>
+                <select name="systemType" id="systemType">
+                    <option value="Video">Video</option>
+                    <option value="Access Control">Access Control</option>
+                    <option value="Unified" selected>Unified Access and Video</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Readers & I/O</legend>
+                <label for="readerCount">Total Readers:</label>
+                <input type="integer" name="totalReaders" id="readerCount" required title="Total Readers" placeholder="please enter total readers" autofocus autocomplete="off">
+                <label for="inputCount">Total Inputs:</label>
+                <input type="integer" name="totalInputs" id="inputCount" required title="Total Readers" placeholder="please enter total Inputs" autofocus autocomplete="off">
+                <label for="outputCount">Total Outputs:</label>
+                <input type="integer" name="totalOutputs" id="outputCount" required title="Total Readers" placeholder="please enter total Outputs" autofocus autocomplete="off">
+            </fieldset>
+
+</form>
+    </body>
+</html>
